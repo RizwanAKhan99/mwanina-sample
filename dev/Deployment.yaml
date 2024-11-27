@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sample-root
+  name: sample-root
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sample-root
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sample-root
+    spec:
+      containers:
+      - image: image-registry.openshift-image-registry.svc:5000/devops/sample-root
+        name: sample-root
+        securityContext:
+          runAsUser: 1000680000
+          runAsGroup: 1000680000

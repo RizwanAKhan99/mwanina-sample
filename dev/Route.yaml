@@ -1,0 +1,16 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: sample-root
+  namespace: devops
+spec:
+  host: mwanina-sample-devops.apps.stgocp.mwanitest.local
+  to:
+    kind: Service
+    name: sample-root
+    weight: 100
+  port:
+    targetPort: 5173
+  tls:
+    termination: edge
+  wildcardPolicy: None
