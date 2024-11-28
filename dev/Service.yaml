@@ -8,13 +8,9 @@ metadata:
 spec:
   ports:
   - name: 80-8080
-    port: 9081
+    port: 8080
     protocol: TCP
-    targetPort: 5173
-  - name: https
-    protocol: TCP
-    port: 9043
-    targetPort: 5173
+    targetPort: 5174
   selector:
     app: sample-root
   type: LoadBalancer
