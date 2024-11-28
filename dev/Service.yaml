@@ -10,11 +10,11 @@ spec:
   - name: 80-8080
     port: 9081
     protocol: TCP
-    targetPort: 5173
+    targetPort: 5178
   - name: https
     protocol: TCP
     port: 9043
-    targetPort: 5173
+    targetPort: 5178
   selector:
     app: sample-root
   type: LoadBalancer
