@@ -8,12 +8,12 @@ metadata:
 spec:
   ports:
   - name: 80-8080
-    port: 80
+    port: 9081
     protocol: TCP
     targetPort: 5173
   - name: https
     protocol: TCP
-    port: 443
+    port: 9043
     targetPort: 5173
   selector:
     app: sample-root

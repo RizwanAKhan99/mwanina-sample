@@ -13,7 +13,7 @@ spec:
   destination: 
     #server: https://api.itz-kycw1o.osv.techzone.ibm.com:6443
     server: https://api.stgocp.mwanitest.local:6443
-    namespace: myapp-2
+    namespace: devops
 
   syncPolicy:
     syncOptions:
